@@ -50,7 +50,7 @@ export function SignUpLayout() {
             alt="Christful Logo"
             width={300}
             height={300}
-            className="animate-fade-in"
+            className="animate-fade-in mt-50"
           />
         </div>
         <div>
