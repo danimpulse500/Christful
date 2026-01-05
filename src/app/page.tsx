@@ -1,8 +1,21 @@
 import Image from "next/image";
 import { LoginLayout } from "@/components/auth/Login";
+import { Header } from "@/components/common/Header";
+import { PageGrid } from "@/components/common/PageGrid";
+import { SideNav } from "@/components/features/SideNav";
+import { CommunityPanel } from "@/components/features/CommunityPanel";
+import { Posts } from "@/components/features/Posts";
 
 export default function Home() {
   return (
-    <LoginLayout />
+    <div className="min-h-screen bg-[#FBFDFF]">
+      <Header />
+      <PageGrid
+        left={<SideNav />}
+        center={<Posts />}
+        right={<CommunityPanel />}
+      />
+
+    </div>
   );
 }
